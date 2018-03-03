@@ -1,6 +1,6 @@
 (def +slipstream-version+ "3.47-SNAPSHOT")
 
-(defproject sixsq/slipstream-parent "4.0.0"
+(defproject sixsq/slipstream-parent "4.0.0-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
@@ -20,7 +20,7 @@
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["vcs" "commit"]
-                  ["vcs" "tag"]
+                  ["vcs" "tag" "--no-sign"]
                   ["deploy" "clojars"]
                   ["change" "version" "leiningen.release/bump-version"]
                   ["vcs" "commit"]
