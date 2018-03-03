@@ -247,7 +247,7 @@
   [["clojars" {:url "https://clojars.org/repo"
                :username :env/clojars_username
                :password :env/clojars_password
-               :signing {:gpg-key "SixSq Release Manager <admin@sixsq.com>"
+               :signing {:gpg-key "C561C9123830546C61A068B60712F62358E7FC89"
                          :gpg-passphrase :env/gpg_password}}]
    
    ["snapshots" {:url           "https://nexus.sixsq.com/content/repositories/snapshots-community-rhel7/"
