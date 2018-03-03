@@ -1,6 +1,6 @@
 (def +slipstream-version+ "3.47-SNAPSHOT")
 
-(defproject sixsq/slipstream-parent "4.0.1-SNAPSHOT"
+(defproject sixsq/slipstream-parent "5.0.0-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
@@ -34,47 +34,6 @@
 
    [org.clojure/clojure "1.9.0"]
    [org.clojure/clojurescript "1.9.946"]
-
-   ;;
-   ;; slipstream dependencies
-   ;;
-
-   [com.sixsq.slipstream/auth ~+slipstream-version+]
-   [com.sixsq.slipstream/token ~+slipstream-version+]
-   [com.sixsq.slipstream/utils ~+slipstream-version+]
-   [com.sixsq.slipstream/Libcloud-SixSq-zip ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamAsync ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamClojureAPI-cimi ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamClojureAPI-run ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamDbBinding-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamDbTesting-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamDbSerializers-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamCljResources-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamCljResourcesTests-jar ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamCljResourcesTestServer-jar ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamServer-cimi-resources-dep ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamServer-cimi-resources ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamCredCache ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamPersistence ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamServer-jar ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamServer-ui-static-content ~+slipstream-version+ :type "zip"]
-   [com.sixsq.slipstream/SlipStreamService ~+slipstream-version+ :scope "test"]
-   [com.sixsq.slipstream/SlipStreamUI ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamPricingLib-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamPlacementLib-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-Azure-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-CloudStack-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-EC2-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-Exoscale-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-NativeSoftLayer-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-NuvlaBox-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-OpenNebula-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-OpenStack-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/SlipStreamConnector-OTC-conf ~+slipstream-version+]
-   [com.sixsq.slipstream/slipstream-ring-container ~+slipstream-version+]
-   [com.sixsq.slipstream/cimi-resources-jar ~+slipstream-version+]
-   [com.sixsq.slipstream/cimi-resources-tests-jar ~+slipstream-version+]
 
    ;;
    ;; general dependencies
