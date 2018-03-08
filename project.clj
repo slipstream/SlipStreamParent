@@ -41,7 +41,7 @@
    ;;
 
    [aleph "0.4.4"]
-   [amazonica "0.3.118"]
+   [amazonica "0.3.118"]                                    ;; can be removed
 
    [buddy/buddy-core "1.4.0"]
    [buddy/buddy-hashers "1.3.0"]
@@ -61,6 +61,7 @@
    [commons-lang/commons-lang "2.6"]
    [commons-codec/commons-codec "1.11"]
    [compojure "1.6.0"]
+   [com.amazonaws/aws-java-sdk "1.11.291"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
