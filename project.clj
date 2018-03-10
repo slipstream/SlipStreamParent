@@ -210,11 +210,15 @@
                :signing {:gpg-key "SixSq Release Manager <admin@sixsq.com>"}}]
    
    ["snapshots" {:url           "https://nexus.sixsq.com/content/repositories/snapshots-community-rhel7/"
+                 :username :env/sixsq_nexus_username
+                 :password :env/sixsq_nexus_password
                  :snapshots     true
                  :sign-releases false
                  :checksum      :fail
                  :update        :always}]
    ["releases" {:url           "https://nexus.sixsq.com/content/repositories/releases-community-rhel7/"
+                :username :env/sixsq_nexus_username
+                :password :env/sixsq_nexus_password
                 :snapshots     false
                 :sign-releases false
                 :checksum      :fail
