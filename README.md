@@ -23,7 +23,21 @@ when uploading to clojars.  You must install GPG and then import the
 SixSq Release GPG keys.  The public key, private key, and password are
 all in 1Password.
 
+For GPG, set the environmental variable:
+
+    export GPG_TTY=$(tty)
+
+This should then allow GPG to prompt for the password for the private
+key. If you run into an error like the following:
+
+    gpg: signing failed: Inappropriate ioctl for device
+
+The problem is with the TTY that GPG is trying to use and usually
+means that the above environmental variable is not set.
+
 # Release
+
+**Be sure that you've done all of the setup in the previous section!**
 
 To release this to clojars, just run the command:
 
@@ -45,17 +59,19 @@ parent references in the child `project.clj` files.
 
 # Troubleshooting
 
-If you run into an error like the following:
+Sadly, something's gone wrong.
 
-    gpg: signing failed: Inappropriate ioctl for device
+You'll need to clean up your local repository and potentially the
+GitHub repository as well.  Be sure to:
 
-The problem is the TTY which GPG is trying to use.  Set the
-environmental variable:
+ * Reset your history to remove any changes that Leiningen made in the
+   release process.
+ * Manually delete the tag that was created.
 
-    export GPG_TTY=$(tty)
+If any changes were pushed to GitHub, then you'll need to do the same
+for the remote repository.
 
-This should then allow GPG to prompt for the password for the private
-key. 
+Before trying again, verify that you've performed all the setup. 
 
 ## License
 
