@@ -41,27 +41,28 @@
    ;;
 
    [aleph "0.4.4"]
-   [amazonica "0.3.118"]                                    ;; can be removed
 
    [buddy/buddy-core "1.4.0"]
    [buddy/buddy-hashers "1.3.0"]
    [buddy/buddy-sign "2.2.0"]
 
    [camel-snake-kebab "0.4.0"]
-   [cc.qbits/spandex "0.5.5"]
+   [cc.qbits/spandex "0.6.1"]
    [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
-   [clj-http "3.7.0"]
+   [clj-http "3.8.0"]
    [clj-stacktrace "0.2.8"]
    [clj-time "0.14.2"]
    [clojure-ini "0.0.2"]
-   [cljsjs/semantic-ui-react "0.77.2-0" :exclusions [cljsjs/react]]
+   [cljsjs/codemirror "5.31.0-0"]
+   [cljsjs/semantic-ui-react "0.78.2-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.17.1-1"]
    [cljsjs/react-date-range "0.2.4-0" :exclusions [cljsjs/react]]
+   [cljsjs/vega-embed "3.0.0-rc7-0"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]
    [commons-codec/commons-codec "1.11"]
    [compojure "1.6.0"]
-   [com.amazonaws/aws-java-sdk "1.11.291"]
+   [com.amazonaws/aws-java-sdk "1.11.292"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -84,7 +85,7 @@
 
    [enlive "1.1.6"]
    [environ "1.1.0"]
-   [expound "0.4.0"]
+   [expound "0.5.0"]
 
    [funcool/promesa "1.9.0"]
 
@@ -159,7 +160,7 @@
    ;;
    [binaryage/devtools "0.9.9" :scope "test"]
 
-   [clojure-complete/clojure-complete "0.2.4" :scope "test"
+   [clojure-complete "0.2.5" :scope "test"
     :exclusions [org.clojure/clojure]]
 
    [day8.re-frame/re-frame-10x "0.2.0" :scope "test"]
