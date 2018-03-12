@@ -62,7 +62,7 @@
    [commons-lang/commons-lang "2.6"]
    [commons-codec/commons-codec "1.11"]
    [compojure "1.6.0"]
-   [com.amazonaws/aws-java-sdk "1.11.292"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.292"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
