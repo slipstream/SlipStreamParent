@@ -1,5 +1,3 @@
-(def +slipstream-version+ "3.47-SNAPSHOT")
-
 (defproject sixsq/slipstream-parent "5.2.0-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
@@ -125,10 +123,10 @@
    [org.clojure/java.classpath "0.2.3"]
    [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
    [org.clojure/test.check "0.9.0" :scope "test"]
-   [org.elasticsearch/elasticsearch "5.5.0"]
-   [org.elasticsearch.client/transport "5.5.0"]
-   [org.elasticsearch.plugin/transport-netty4-client "5.5.0"]
-   [org.elasticsearch.test/framework "5.5.0"
+   [org.elasticsearch/elasticsearch "6.2.4"]
+   [org.elasticsearch.client/transport "6.2.4"]
+   [org.elasticsearch.plugin/transport-netty4-client "6.2.4"]
+   [org.elasticsearch.test/framework "6.2.4"
     :exclusions [com.carrotsearch.randomizedtesting/randomizedtesting-runner]]
 
    [org.json/json "20180130"]
