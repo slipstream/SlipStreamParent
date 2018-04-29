@@ -1,4 +1,4 @@
-(defproject sixsq/slipstream-parent "5.2.0-SNAPSHOT"
+(defproject sixsq/slipstream-parent "5.3.0-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
@@ -31,7 +31,7 @@
    ;;
 
    [org.clojure/clojure "1.9.0"]
-   [org.clojure/clojurescript "1.9.946"]
+   [org.clojure/clojurescript "1.10.238"]
 
    ;;
    ;; general dependencies
@@ -47,49 +47,44 @@
    [camel-snake-kebab "0.4.0"]
    [cc.qbits/spandex "0.6.2"]
    [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
-   [clj-http "3.8.0"]
+   [clj-http "3.9.0"]
    [clj-stacktrace "0.2.8"]
-   [clj-time "0.14.2"]
+   [clj-time "0.14.3"]
    [clojure-ini "0.0.2"]
    [cljsjs/codemirror "5.31.0-0"]
-   [cljsjs/semantic-ui-react "0.78.2-0" :exclusions [cljsjs/react]]
-   [cljsjs/moment "2.17.1-1"]
+   [cljsjs/semantic-ui-react "0.79.1-0" :exclusions [cljsjs/react]]
+   [cljsjs/moment "2.22.0-0"]
    [cljsjs/react-date-range "0.2.4-0" :exclusions [cljsjs/react]]
    [cljsjs/vega-embed "3.1.1-0"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]
    [commons-codec/commons-codec "1.11"]
-   [compojure "1.6.0"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.303"]
+   [compojure "1.6.1"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.319"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
    [com.draines/postal "2.0.2"]
    [com.jcraft/jsch "0.1.54"]
-   [com.rpl/specter "1.1.0"]
+   [com.rpl/specter "1.1.1"]
    [com.taoensso/encore "2.94.0"]
-   [com.taoensso/tempura "1.2.0"]
+   [com.taoensso/tempura "1.2.1"]
    [com.taoensso/tower "3.1.0-beta5"]
-   [org.clojure/tools.reader "1.1.0"]
+   [org.clojure/tools.reader "1.2.2"]
 
    ;; Pinned to this version because of a dependency conflict with the
    ;; deprecated tower library used by SlipStreamUI.
    [com.taoensso/timbre "4.7.4"]
 
-   ;; cljs testing; control options here
-   [doo "0.1.10" :scope "test"]
-
-   [duratom "0.3.7"]
+   [duratom "0.4.1"]
 
    [enlive "1.1.6"]
    [environ "1.1.0"]
-   [expound "0.5.0"]
+   [expound "0.6.0"]
 
    [funcool/promesa "1.9.0"]
 
-   [http-kit "2.2.0"]
-
-   [instaparse "1.4.8"]
+   [instaparse "1.4.9"]
    [io.nervous/kvlt "0.1.5-20180119.082733-5"
     :exclusions [org.clojure/clojurescript]]
 
@@ -116,7 +111,7 @@
 
    [org.clojure/data.xml "0.0.8"]
    [org.clojure/data.zip "0.1.2"]
-   [org.clojure/tools.cli "0.3.5"]
+   [org.clojure/tools.cli "0.3.7"]
    [org.clojure/tools.logging "0.4.0"]
    [org.clojure/tools.namespace "0.2.11"]
    [org.clojure/data.json "0.2.6"]
@@ -135,13 +130,13 @@
    [org.slf4j/slf4j-log4j12 "1.7.25"]
    [org.apache.curator/curator-test "2.12.0" :scope "test"]
 
-   [potemkin "0.4.4"]
+   [potemkin "0.4.5"]
 
-   [reagent "0.7.0"]
+   [reagent "0.8.0"]
    [re-frame "0.10.5"]
    [ring "1.6.3"]
    [ring/ring-core "1.6.3"]
-   [ring/ring-codec "1.1.0"]
+   [ring/ring-codec "1.1.1"]
    [ring/ring-json "0.4.0"]
    [ring/ring-defaults "0.3.1"]
 
@@ -149,19 +144,22 @@
    [superstring "2.1.0"]
 
    [zookeeper-clj "0.9.4"]
-   [org.apache.zookeeper/zookeeper "3.4.11"
+   [org.apache.zookeeper/zookeeper "3.4.12"
     :exclusions [jline
                  org.slf4j/slf4j-log4j12]]
 
    ;;
    ;; libraries and utilities for testing
    ;;
-   [binaryage/devtools "0.9.9" :scope "test"]
+   [binaryage/devtools "0.9.10" :scope "test"]
 
    [clojure-complete "0.2.5" :scope "test"
     :exclusions [org.clojure/clojure]]
 
-   [day8.re-frame/re-frame-10x "0.3.0" :scope "test"]
+   [day8.re-frame/re-frame-10x "0.3.3" :scope "test"]
+
+   ;; cljs testing; control options here
+   [doo "0.1.10" :scope "test"]
 
    [expectations "2.1.9" :scope "test"]
 
