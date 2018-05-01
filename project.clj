@@ -1,5 +1,3 @@
-(def +slipstream-version+ "3.47-SNAPSHOT")
-
 (defproject sixsq/slipstream-parent "5.3.0-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
@@ -62,14 +60,14 @@
    [commons-lang/commons-lang "2.6"]
    [commons-codec/commons-codec "1.11"]
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.319"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.320"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
    [com.draines/postal "2.0.2"]
    [com.jcraft/jsch "0.1.54"]
    [com.rpl/specter "1.1.1"]
-   [com.taoensso/encore "2.94.0"]
+   [com.taoensso/encore "2.96.0"]
    [com.taoensso/tempura "1.2.1"]
    [com.taoensso/tower "3.1.0-beta5"]
    [org.clojure/tools.reader "1.2.2"]
@@ -120,10 +118,10 @@
    [org.clojure/java.classpath "0.2.3"]
    [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
    [org.clojure/test.check "0.9.0" :scope "test"]
-   [org.elasticsearch/elasticsearch "5.5.0"]
-   [org.elasticsearch.client/transport "5.5.0"]
-   [org.elasticsearch.plugin/transport-netty4-client "5.5.0"]
-   [org.elasticsearch.test/framework "5.5.0"
+   [org.elasticsearch/elasticsearch "6.2.4"]
+   [org.elasticsearch.client/transport "6.2.4"]
+   [org.elasticsearch.plugin/transport-netty4-client "6.2.4"]
+   [org.elasticsearch.test/framework "6.2.4"
     :exclusions [com.carrotsearch.randomizedtesting/randomizedtesting-runner]]
 
    [org.json/json "20180130"]
