@@ -1,4 +1,4 @@
-(defproject sixsq/slipstream-parent "5.4.0-SNAPSHOT"
+(defproject sixsq/slipstream-parent "5.3.1-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
@@ -102,6 +102,7 @@
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
+   [metosin/spec-tools "0.6.1"]
    [metrics-clojure "2.10.0"]
    [metrics-clojure-ring "2.10.0"]
    [metrics-clojure-jvm "2.10.0"]
