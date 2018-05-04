@@ -54,7 +54,7 @@
    [cljsjs/codemirror "5.31.0-0"]
    [cljsjs/semantic-ui-react "0.79.1-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.22.0-0"]
-   [cljsjs/react-date-range "0.2.4-0" :exclusions [cljsjs/react]]
+   [cljsjs/react-datepicker "1.4.1-0"]
    [cljsjs/vega-embed "3.1.1-0"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]
