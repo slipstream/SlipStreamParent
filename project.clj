@@ -1,4 +1,4 @@
-(defproject sixsq/slipstream-parent "5.4.0-SNAPSHOT"
+(defproject sixsq/slipstream-parent "5.3.3-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
@@ -8,7 +8,13 @@
             :url          "http://www.apache.org/licenses/LICENSE-2.0"
             :distribution :repo}
 
-  :plugins [[lein-ancient "0.6.14"]]
+  :plugins [[jonase/eastwood "0.2.5"]
+            [kirasystems/lein-codox "0.10.4"]
+            [lein-ancient "0.6.15"]
+            [lein-environ "1.1.0"]
+            [lein-kibit "0.1.6"]
+            [lein-nsorg "0.1.4"]
+            [lein-shell "0.5.0"]]
 
   :filespecs [{:type :path
                :path "./project.clj"}]
@@ -206,7 +212,7 @@
                :username :env/clojars_username
                :password :env/clojars_password
                :signing {:gpg-key "SixSq Release Manager <admin@sixsq.com>"}}]
-   
+
    ["snapshots" {:url           "https://nexus.sixsq.com/content/repositories/snapshots-community-rhel7/"
                  :username :env/sixsq_nexus_username
                  :password :env/sixsq_nexus_password
