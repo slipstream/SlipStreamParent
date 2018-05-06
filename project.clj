@@ -10,7 +10,6 @@
 
   :plugins [[jonase/eastwood "0.2.5"]
             [kirasystems/lein-codox "0.10.4"]
-            [kirasystems/lein-codox "0.10.4"]
             ;; FIXME update to lein-codox (remove kirasystems) after fix of
             ;; https://github.com/sattvik/leinjacker/issues/14
             ;; (leinjacker 0.4.3 is published and lein-codox update their leinjacker dependency to 0.4.3)
