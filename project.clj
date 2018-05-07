@@ -39,7 +39,7 @@
    ;; core languages
    ;;
 
-   [org.clojure/clojure "1.9.0"]
+   [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
    [org.clojure/clojurescript "1.10.238"]
 
    ;;
@@ -66,15 +66,15 @@
    [cljsjs/react-datepicker "1.4.1-0"]
    [cljsjs/vega-embed "3.1.1-0"]
    [commons-logging "1.2"]
-   [commons-lang/commons-lang "2.6"]
-   [commons-codec/commons-codec "1.11"]
+   [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
+   [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
    [com.amazonaws/aws-java-sdk-s3 "1.11.320"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
    [com.draines/postal "2.0.2"]
-   [com.jcraft/jsch "0.1.54"]
+   [com.jcraft/jsch "0.1.54"]                               ; defined also in SlipStream artifact
    [com.rpl/specter "1.1.1"]
    [com.taoensso/encore "2.96.0"]
    [com.taoensso/tempura "1.2.1"]
@@ -97,16 +97,16 @@
    [io.nervous/kvlt "0.1.5-20180119.082733-5"
     :exclusions [org.clojure/clojurescript]]
 
-   [javax.mail/mail "1.4.7" :scope "compile"]
-   [javax.servlet/javax.servlet-api "4.0.0"]
+   [javax.mail/mail "1.4.7" :scope "compile"]               ; defined also in SlipStream artifact
+   [javax.servlet/javax.servlet-api "4.0.0"]                ; defined also in SlipStream artifact
 
    [log4j "1.2.17"
     :exclusions [javax.mail/mail
                  javax.jms/jms
                  com.sun.jdmk/jmxtools
-                 com.sun.jmx/jmxri]]
-   [org.apache.logging.log4j/log4j-core "2.11.0"]
-   [org.apache.logging.log4j/log4j-api "2.11.0"]
+                 com.sun.jmx/jmxri]]                        ; defined also in SlipStream artifact
+   [org.apache.logging.log4j/log4j-core "2.11.0"]           ; defined also in SlipStream artifact
+   [org.apache.logging.log4j/log4j-api "2.11.0"]            ; defined also in SlipStream artifact
    [org.apache.logging.log4j/log4j-web "2.11.0"]
    [org.slf4j/slf4j-simple "1.7.25"]
 
@@ -127,17 +127,17 @@
    [org.clojure/data.json "0.2.6"]
    [org.clojure/java.classpath "0.2.3"]
    [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
-   [org.clojure/test.check "0.9.0" :scope "test"]
-   [org.elasticsearch/elasticsearch "6.2.4"]
-   [org.elasticsearch.client/transport "6.2.4"]
+   [org.clojure/test.check "0.9.0" :scope "test"]           ; defined also in SlipStream artifact
+   [org.elasticsearch/elasticsearch "6.2.4"]                ; defined also in SlipStream artifact
+   [org.elasticsearch.client/transport "6.2.4"]             ; defined also in SlipStream artifact
    [org.elasticsearch.plugin/transport-netty4-client "6.2.4"]
    [org.elasticsearch.test/framework "6.2.4"
     :exclusions [com.carrotsearch.randomizedtesting/randomizedtesting-runner]]
 
    [org.json/json "20180130"]
    [org.slf4j/slf4j-api "1.7.25"]
-   [org.slf4j/slf4j-jdk14 "1.7.25"]
-   [org.slf4j/slf4j-log4j12 "1.7.25"]
+   [org.slf4j/slf4j-jdk14 "1.7.25"]                         ; defined also in SlipStream artifact
+   [org.slf4j/slf4j-log4j12 "1.7.25"]                       ; defined also in SlipStream artifact
    [org.apache.curator/curator-test "2.12.0" :scope "test"]
 
    [potemkin "0.4.5"]
@@ -171,7 +171,7 @@
    ;; cljs testing; control options here
    [doo "0.1.10" :scope "test"]
 
-   [expectations "2.1.9" :scope "test"]
+   [expectations "2.1.9" :scope "test"]                     ; defined also in SlipStream artifact
 
    [junit "4.12" :scope "test"]
 
@@ -211,21 +211,21 @@
 
 
   :deploy-repositories
-  [["clojars" {:url "https://clojars.org/repo"
+  [["clojars" {:url      "https://clojars.org/repo"
                :username :env/clojars_username
                :password :env/clojars_password
-               :signing {:gpg-key "SixSq Release Manager <admin@sixsq.com>"}}]
+               :signing  {:gpg-key "SixSq Release Manager <admin@sixsq.com>"}}]
 
    ["snapshots" {:url           "https://nexus.sixsq.com/content/repositories/snapshots-community-rhel7/"
-                 :username :env/sixsq_nexus_username
-                 :password :env/sixsq_nexus_password
+                 :username      :env/sixsq_nexus_username
+                 :password      :env/sixsq_nexus_password
                  :snapshots     true
                  :sign-releases false
                  :checksum      :fail
                  :update        :always}]
    ["releases" {:url           "https://nexus.sixsq.com/content/repositories/releases-community-rhel7/"
-                :username :env/sixsq_nexus_username
-                :password :env/sixsq_nexus_password
+                :username      :env/sixsq_nexus_username
+                :password      :env/sixsq_nexus_password
                 :snapshots     false
                 :sign-releases false
                 :checksum      :fail
