@@ -65,6 +65,7 @@
    [cljsjs/moment "2.22.0-0"]
    [cljsjs/react-datepicker "1.4.1-0"]
    [cljsjs/vega-embed "3.1.1-0"]
+   [commons-io "2.5"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
