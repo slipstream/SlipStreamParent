@@ -1,4 +1,4 @@
-(defproject sixsq/slipstream-parent "5.3.5"
+(defproject sixsq/slipstream-parent "5.3.6-SNAPSHOT"
 
   :description "parent project file for SlipStream modules"
 
