@@ -108,6 +108,7 @@
    [org.apache.logging.log4j/log4j-core "2.11.0"]           ; defined also in SlipStream artifact
    [org.apache.logging.log4j/log4j-api "2.11.0"]            ; defined also in SlipStream artifact
    [org.apache.logging.log4j/log4j-web "2.11.0"]
+   [org.apache.httpcomponents/httpclient "4.5.5"]           ; force version used by clj-http
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
@@ -129,6 +130,8 @@
    [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
    [org.clojure/test.check "0.9.0" :scope "test"]           ; defined also in SlipStream artifact
    [org.elasticsearch/elasticsearch "6.2.4"]                ; defined also in SlipStream artifact
+   [org.elasticsearch.client/elasticsearch-rest-client "6.2.4"]
+   [org.elasticsearch.client/elasticsearch-rest-client-sniffer "6.2.4"]
    [org.elasticsearch.client/transport "6.2.4"]             ; defined also in SlipStream artifact
    [org.elasticsearch.plugin/transport-netty4-client "6.2.4"]
    [org.elasticsearch.test/framework "6.2.4"
@@ -140,12 +143,13 @@
    [org.slf4j/slf4j-log4j12 "1.7.25"]                       ; defined also in SlipStream artifact
    [org.apache.curator/curator-test "2.12.0" :scope "test"]
 
-   [potemkin "0.4.5"]
+   [potemkin "0.4.5" :exclusions [riddley]]                 ; aleph needs a more recent version
 
    [reagent "0.8.0"]
    [re-frame "0.10.5"]
+   [riddley "0.1.14"]
    [ring "1.6.3"]
-   [ring/ring-core "1.6.3"]
+   [ring/ring-core "1.6.3" :exclusions [commons-io]]        ; clj-http needs a more recent version
    [ring/ring-codec "1.1.1"]
    [ring/ring-json "0.4.0"]
    [ring/ring-defaults "0.3.1"]
