@@ -49,9 +49,9 @@
 
    [aleph "0.4.4"]
 
-   [buddy/buddy-core "1.4.0"]
+   [buddy/buddy-core "1.5.0"]
    [buddy/buddy-hashers "1.3.0"]
-   [buddy/buddy-sign "2.2.0"]
+   [buddy/buddy-sign "3.0.0"]
 
    [camel-snake-kebab "0.4.0"]
    [cc.qbits/spandex "0.6.2"]
