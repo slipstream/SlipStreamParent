@@ -40,14 +40,14 @@
    ;;
 
    [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
-   [org.clojure/clojurescript "1.10.238"]
+   [org.clojure/clojurescript "1.10.312"]
 
    ;;
    ;; general dependencies
    ;; (please keep these in alphabetical order)
    ;;
 
-   [aleph "0.4.4"]
+   [aleph "0.4.6"]
 
    [buddy/buddy-core "1.5.0"]
    [buddy/buddy-hashers "1.3.0"]
@@ -58,19 +58,19 @@
    [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
    [clj-http "3.9.0"]
    [clj-stacktrace "0.2.8"]
-   [clj-time "0.14.3"]
+   [clj-time "0.14.4"]
    [clojure-ini "0.0.2"]
    [cljsjs/codemirror "5.31.0-0"]
-   [cljsjs/semantic-ui-react "0.79.1-0" :exclusions [cljsjs/react]]
-   [cljsjs/moment "2.22.0-0"]
-   [cljsjs/react-datepicker "1.4.1-0"]
+   [cljsjs/semantic-ui-react "0.80.0-0" :exclusions [cljsjs/react]]
+   [cljsjs/moment "2.22.2-0"]
+   [cljsjs/react-datepicker "1.5.0-0"]
    [cljsjs/vega-embed "3.1.1-0"]
-   [commons-io "2.5"]
+   [commons-io "2.6"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.320"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.349"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -90,7 +90,7 @@
 
    [enlive "1.1.6"]
    [environ "1.1.0"]
-   [expound "0.6.0"]
+   [expound "0.7.0"]
 
    [funcool/promesa "1.9.0"]
 
@@ -113,7 +113,7 @@
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
-   [metosin/spec-tools "0.6.1"]
+   [metosin/spec-tools "0.7.0"]
    [metrics-clojure "2.10.0"]
    [metrics-clojure-ring "2.10.0"]
    [metrics-clojure-jvm "2.10.0"]
@@ -124,10 +124,10 @@
    [org.clojure/data.xml "0.0.8"]
    [org.clojure/data.zip "0.1.2"]
    [org.clojure/tools.cli "0.3.7"]
-   [org.clojure/tools.logging "0.4.0"]
+   [org.clojure/tools.logging "0.4.1"]
    [org.clojure/tools.namespace "0.2.11"]
    [org.clojure/data.json "0.2.6"]
-   [org.clojure/java.classpath "0.2.3"]
+   [org.clojure/java.classpath "0.3.0"]
    [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
    [org.clojure/test.check "0.9.0" :scope "test"]           ; defined also in SlipStream artifact
    [org.elasticsearch/elasticsearch "6.2.4"]                ; defined also in SlipStream artifact
@@ -146,14 +146,14 @@
 
    [potemkin "0.4.5" :exclusions [riddley]]                 ; aleph needs a more recent version
 
-   [reagent "0.8.0"]
+   [reagent "0.8.1"]
    [re-frame "0.10.5"]
-   [riddley "0.1.14"]
+   [riddley "0.1.15"]
    [ring "1.6.3"]
    [ring/ring-core "1.6.3" :exclusions [commons-io]]        ; clj-http needs a more recent version
    [ring/ring-codec "1.1.1"]
    [ring/ring-json "0.4.0"]
-   [ring/ring-defaults "0.3.1"]
+   [ring/ring-defaults "0.3.2"]
 
    [secretary "1.2.3"]
    [superstring "2.1.0"]
@@ -183,7 +183,7 @@
    [org.clojure/tools.nrepl "0.2.13" :scope "test"
     :exclusions [org.clojure/clojure]]
 
-   [peridot "0.5.0" :scope "test"]
+   [peridot "0.5.1" :scope "test"]
    ]
 
   :repositories
