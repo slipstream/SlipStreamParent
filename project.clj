@@ -47,7 +47,7 @@
    ;; (please keep these in alphabetical order)
    ;;
 
-   [aleph "0.4.6"]
+   [aleph "0.4.4"]
 
    [buddy/buddy-core "1.5.0"]
    [buddy/buddy-hashers "1.3.0"]
