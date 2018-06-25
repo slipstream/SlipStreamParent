@@ -40,7 +40,7 @@
    ;;
 
    [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
-   [org.clojure/clojurescript "1.10.312"]
+   [org.clojure/clojurescript "1.10.329"]
 
    ;;
    ;; general dependencies
@@ -63,7 +63,7 @@
    [cljsjs/codemirror "5.31.0-0"]
    [cljsjs/semantic-ui-react "0.80.0-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.22.2-0"]
-   [cljsjs/react-datepicker "1.5.0-0"]
+   [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
    [cljsjs/vega-embed "3.1.1-0"]
    [commons-io "2.6"]
    [commons-logging "1.2"]
