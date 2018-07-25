@@ -17,7 +17,8 @@
             [lein-environ "1.1.0"]
             [lein-kibit "0.1.6"]
             [lein-nsorg "0.1.4"]
-            [lein-shell "0.5.0"]]
+            [lein-shell "0.5.0"]
+            [com.livingsocial/lein-dependency-check "1.0.2"]]
 
   :filespecs [{:type :path
                :path "./project.clj"}]
@@ -47,7 +48,9 @@
    ;; (please keep these in alphabetical order)
    ;;
 
-   [aleph "0.4.6"]
+   ;; be careful of upgrading; newer versions have a
+   ;; netty conflict with elasticsearch
+   [aleph "0.4.4"]
 
    [buddy/buddy-core "1.5.0"]
    [buddy/buddy-hashers "1.3.0"]
