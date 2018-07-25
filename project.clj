@@ -40,28 +40,28 @@
    ;;
 
    [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
-   [org.clojure/clojurescript "1.10.329"]
+   [org.clojure/clojurescript "1.10.339"]
 
    ;;
    ;; general dependencies
    ;; (please keep these in alphabetical order)
    ;;
 
-   [aleph "0.4.4"]
+   [aleph "0.4.6"]
 
    [buddy/buddy-core "1.5.0"]
    [buddy/buddy-hashers "1.3.0"]
    [buddy/buddy-sign "3.0.0"]
 
    [camel-snake-kebab "0.4.0"]
-   [cc.qbits/spandex "0.6.2"]
+   [cc.qbits/spandex "0.6.4"]
    [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
    [clj-http "3.9.0"]
    [clj-stacktrace "0.2.8"]
    [clj-time "0.14.4"]
    [clojure-ini "0.0.2"]
    [cljsjs/codemirror "5.31.0-0"]
-   [cljsjs/semantic-ui-react "0.80.0-0" :exclusions [cljsjs/react]]
+   [cljsjs/semantic-ui-react "0.82.0-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.22.2-0"]
    [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
    [cljsjs/vega-embed "3.1.1-0"]
@@ -70,7 +70,7 @@
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.349"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.373"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -80,7 +80,7 @@
    [com.taoensso/encore "2.96.0"]
    [com.taoensso/tempura "1.2.1"]
    [com.taoensso/tower "3.1.0-beta5"]
-   [org.clojure/tools.reader "1.2.2"]
+   [org.clojure/tools.reader "1.3.0"]
 
    ;; Pinned to this version because of a dependency conflict with the
    ;; deprecated tower library used by SlipStreamUI.
@@ -90,7 +90,7 @@
 
    [enlive "1.1.6"]
    [environ "1.1.0"]
-   [expound "0.7.0"]
+   [expound "0.7.1"]
 
    [funcool/promesa "1.9.0"]
 
@@ -113,7 +113,7 @@
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
-   [metosin/spec-tools "0.7.0"]
+   [metosin/spec-tools "0.7.1"]
    [metrics-clojure "2.10.0"]
    [metrics-clojure-ring "2.10.0"]
    [metrics-clojure-jvm "2.10.0"]
