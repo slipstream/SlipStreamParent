@@ -59,21 +59,21 @@
    [camel-snake-kebab "0.4.0"]
    [cc.qbits/spandex "0.6.4"]
    [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
-   [clj-http "3.9.0"]
+   [clj-http "3.9.1"]
    [clj-stacktrace "0.2.8"]
    [clj-time "0.14.4"]
    [clojure-ini "0.0.2"]
    [cljsjs/codemirror "5.31.0-0"]
-   [cljsjs/semantic-ui-react "0.82.0-0" :exclusions [cljsjs/react]]
+   [cljsjs/semantic-ui-react "0.82.2-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.22.2-0"]
    [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
-   [cljsjs/vega-embed "3.1.1-0"]
+   [cljsjs/vega-embed "3.16.1-0"]
    [commons-io "2.6"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.373"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.402"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -112,7 +112,7 @@
    [org.apache.logging.log4j/log4j-core "2.11.0"]           ; defined also in SlipStream artifact
    [org.apache.logging.log4j/log4j-api "2.11.0"]            ; defined also in SlipStream artifact
    [org.apache.logging.log4j/log4j-web "2.11.0"]
-   [org.apache.httpcomponents/httpclient "4.5.5"]           ; force version used by clj-http
+   [org.apache.httpcomponents/httpclient "4.5.6"]           ; force version used by clj-http
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
@@ -141,7 +141,7 @@
    [org.elasticsearch.test/framework "6.2.4"
     :exclusions [com.carrotsearch.randomizedtesting/randomizedtesting-runner]]
 
-   [org.json/json "20180130"]
+   [org.json/json "20180813"]
    [org.slf4j/slf4j-api "1.7.25"]
    [org.slf4j/slf4j-jdk14 "1.7.25"]                         ; defined also in SlipStream artifact
    [org.slf4j/slf4j-log4j12 "1.7.25"]                       ; defined also in SlipStream artifact
@@ -150,7 +150,7 @@
    [potemkin "0.4.5" :exclusions [riddley]]                 ; aleph needs a more recent version
 
    [reagent "0.8.1"]
-   [re-frame "0.10.5"]
+   [re-frame "0.10.6"]
    [riddley "0.1.15"]
    [ring "1.6.3"]
    [ring/ring-core "1.6.3" :exclusions [commons-io]]        ; clj-http needs a more recent version
@@ -162,7 +162,7 @@
    [superstring "2.1.0"]
 
    [zookeeper-clj "0.9.4"]
-   [org.apache.zookeeper/zookeeper "3.4.12"
+   [org.apache.zookeeper/zookeeper "3.4.13"
     :exclusions [jline
                  org.slf4j/slf4j-log4j12]]
 
