@@ -89,6 +89,8 @@
    ;; deprecated tower library used by SlipStreamUI.
    [com.taoensso/timbre "4.7.4"]
 
+   [day8.re-frame/http-fx "0.1.6"]
+
    [duratom "0.4.1"]
 
    [enlive "1.1.6"]
