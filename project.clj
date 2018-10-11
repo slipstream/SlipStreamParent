@@ -67,6 +67,7 @@
    [cljsjs/semantic-ui-react "0.82.2-0" :exclusions [cljsjs/react]]
    [cljsjs/moment "2.22.2-0"]
    [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
+   [cljsjs/react-chartjs-2 "2.7.0-0"]
    [cljsjs/vega-embed "3.16.1-0"]
    [commons-io "2.6"]
    [commons-logging "1.2"]
@@ -89,6 +90,7 @@
    ;; deprecated tower library used by SlipStreamUI.
    [com.taoensso/timbre "4.7.4"]
 
+   [day8.re-frame/http-fx "0.1.6"]
    [duratom "0.4.1"]
 
    [enlive "1.1.6"]
