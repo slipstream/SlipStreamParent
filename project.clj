@@ -58,23 +58,22 @@
 
    [camel-snake-kebab "0.4.0"]
    [cc.qbits/spandex "0.6.4"]
-   [cheshire "5.8.0"]                                       ;; newer, explicit version needed by ring-json
+   [cheshire "5.8.1"]                                       ;; newer, explicit version needed by ring-json
    [clj-http "3.9.1"]
    [clj-stacktrace "0.2.8"]
-   [clj-time "0.14.4"]
+   [clj-time "0.15.0"]
    [clojure-ini "0.0.2"]
-   [cljsjs/codemirror "5.31.0-0"]
+   [cljsjs/codemirror "5.40.2-1"]
    [cljsjs/semantic-ui-react "0.82.2-0" :exclusions [cljsjs/react]]
-   [cljsjs/moment "2.22.2-0"]
+   [cljsjs/moment "2.22.2-1"]
    [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
    [cljsjs/react-chartjs-2 "2.7.0-0"]
-   [cljsjs/vega-embed "3.16.1-0"]
    [commons-io "2.6"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.402"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.433"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -104,21 +103,21 @@
     :exclusions [org.clojure/clojurescript]]
 
    [javax.mail/mail "1.4.7" :scope "compile"]               ; defined also in SlipStream artifact
-   [javax.servlet/javax.servlet-api "4.0.0"]                ; defined also in SlipStream artifact
+   [javax.servlet/javax.servlet-api "4.0.1"]                ; defined also in SlipStream artifact
 
    [log4j "1.2.17"
     :exclusions [javax.mail/mail
                  javax.jms/jms
                  com.sun.jdmk/jmxtools
                  com.sun.jmx/jmxri]]                        ; defined also in SlipStream artifact
-   [org.apache.logging.log4j/log4j-core "2.11.0"]           ; defined also in SlipStream artifact
-   [org.apache.logging.log4j/log4j-api "2.11.0"]            ; defined also in SlipStream artifact
-   [org.apache.logging.log4j/log4j-web "2.11.0"]
+   [org.apache.logging.log4j/log4j-core "2.11.1"]           ; defined also in SlipStream artifact
+   [org.apache.logging.log4j/log4j-api "2.11.1"]            ; defined also in SlipStream artifact
+   [org.apache.logging.log4j/log4j-web "2.11.1"]
    [org.apache.httpcomponents/httpclient "4.5.6"]           ; force version used by clj-http
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
-   [metosin/spec-tools "0.7.1"]
+   [metosin/spec-tools "0.8.0"]
    [metrics-clojure "2.10.0"]
    [metrics-clojure-ring "2.10.0"]
    [metrics-clojure-jvm "2.10.0"]
@@ -128,7 +127,7 @@
 
    [org.clojure/data.xml "0.0.8"]
    [org.clojure/data.zip "0.1.2"]
-   [org.clojure/tools.cli "0.3.7"]
+   [org.clojure/tools.cli "0.4.1"]
    [org.clojure/tools.logging "0.4.1"]
    [org.clojure/tools.namespace "0.2.11"]
    [org.clojure/data.json "0.2.6"]
@@ -154,14 +153,14 @@
    [reagent "0.8.1"]
    [re-frame "0.10.6"]
    [riddley "0.1.15"]
-   [ring "1.6.3"]
-   [ring/ring-core "1.6.3" :exclusions [commons-io]]        ; clj-http needs a more recent version
+   [ring "1.7.0"]
+   [ring/ring-core "1.7.0" :exclusions [commons-io]]        ; clj-http needs a more recent version
    [ring/ring-codec "1.1.1"]
    [ring/ring-json "0.4.0"]
    [ring/ring-defaults "0.3.2"]
 
    [secretary "1.2.3"]
-   [superstring "2.1.0"]
+   [superstring "3.0.0"]
 
    [zookeeper-clj "0.9.4"]
    [org.apache.zookeeper/zookeeper "3.4.13"
