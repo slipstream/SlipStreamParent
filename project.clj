@@ -59,6 +59,7 @@
    [camel-snake-kebab "0.4.0"]
    [cc.qbits/spandex "0.6.4"]
    [cheshire "5.8.1"]                                       ;; newer, explicit version needed by ring-json
+   [clj-commons/secretary "1.2.4"]                          ;; patched version for clojurescript 1.10.439
    [clj-http "3.9.1"]
    [clj-stacktrace "0.2.8"]
    [clj-time "0.15.1"]
@@ -154,7 +155,6 @@
    [ring/ring-json "0.4.0"]
    [ring/ring-defaults "0.3.2"]
 
-   [secretary "1.2.3"]
    [superstring "3.0.0"]
 
    [zookeeper-clj "0.9.4"]
