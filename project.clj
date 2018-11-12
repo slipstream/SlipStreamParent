@@ -41,7 +41,7 @@
    ;;
 
    [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
-   [org.clojure/clojurescript "1.10.339"]
+   [org.clojure/clojurescript "1.10.439"]
 
    ;;
    ;; general dependencies
@@ -61,29 +61,24 @@
    [cheshire "5.8.1"]                                       ;; newer, explicit version needed by ring-json
    [clj-http "3.9.1"]
    [clj-stacktrace "0.2.8"]
-   [clj-time "0.15.0"]
+   [clj-time "0.15.1"]
    [clojure-ini "0.0.2"]
-   [cljsjs/codemirror "5.40.2-1"]
-   [cljsjs/semantic-ui-react "0.82.2-0" :exclusions [cljsjs/react]]
-   [cljsjs/moment "2.22.2-1"]
-   [cljsjs/react-datepicker "1.4.1-0"]                      ;; check WebUI #158 before using 1.5.0-0
-   [cljsjs/react-chartjs-2 "2.7.0-0"]
    [commons-io "2.6"]
    [commons-logging "1.2"]
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.433"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.447"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
    [com.draines/postal "2.0.2"]
    [com.jcraft/jsch "0.1.54"]                               ; defined also in SlipStream artifact
-   [com.rpl/specter "1.1.1"]
+   [com.rpl/specter "1.1.2"]
    [com.taoensso/encore "2.96.0"]
    [com.taoensso/tempura "1.2.1"]
    [com.taoensso/tower "3.1.0-beta5"]
-   [org.clojure/tools.reader "1.3.0"]
+   [org.clojure/tools.reader "1.3.2"]
 
    ;; Pinned to this version because of a dependency conflict with the
    ;; deprecated tower library used by SlipStreamUI.
@@ -117,7 +112,7 @@
    [org.slf4j/slf4j-simple "1.7.25"]
 
    [me.raynes/fs "1.4.6"]
-   [metosin/spec-tools "0.8.0"]
+   [metosin/spec-tools "0.8.2"]
    [metrics-clojure "2.10.0"]
    [metrics-clojure-ring "2.10.0"]
    [metrics-clojure-jvm "2.10.0"]
@@ -153,8 +148,8 @@
    [reagent "0.8.1"]
    [re-frame "0.10.6"]
    [riddley "0.1.15"]
-   [ring "1.7.0"]
-   [ring/ring-core "1.7.0" :exclusions [commons-io]]        ; clj-http needs a more recent version
+   [ring "1.7.1"]
+   [ring/ring-core "1.7.1" :exclusions [commons-io]]        ; clj-http needs a more recent version
    [ring/ring-codec "1.1.1"]
    [ring/ring-json "0.4.0"]
    [ring/ring-defaults "0.3.2"]
@@ -175,6 +170,8 @@
    [clojure-complete "0.2.5" :scope "test"
     :exclusions [org.clojure/clojure]]
 
+   [com.google.javascript/closure-compiler-unshaded "v20181028"]
+
    [day8.re-frame/re-frame-10x "0.3.3" :scope "test"]
 
    ;; cljs testing; control options here
@@ -188,6 +185,8 @@
     :exclusions [org.clojure/clojure]]
 
    [peridot "0.5.1" :scope "test"]
+
+   [thheller/shadow-cljs "2.7.2"]
    ]
 
   :repositories
