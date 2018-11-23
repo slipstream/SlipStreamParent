@@ -69,7 +69,7 @@
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.447"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.455"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -128,7 +128,7 @@
    [org.clojure/tools.namespace "0.2.11"]
    [org.clojure/data.json "0.2.6"]
    [org.clojure/java.classpath "0.3.0"]
-   [org.clojure/core.async "0.4.474" :exclusions [org.clojure/tools.reader]]
+   [org.clojure/core.async "0.4.490" :exclusions [org.clojure/tools.reader]]
    [org.clojure/test.check "0.9.0" :scope "test"]           ; defined also in SlipStream artifact
    [org.elasticsearch/elasticsearch "6.2.4"]                ; defined also in SlipStream artifact
    [org.elasticsearch.client/elasticsearch-rest-client "6.2.4"]
@@ -142,6 +142,11 @@
    [org.slf4j/slf4j-api "1.7.25"]
    [org.slf4j/slf4j-jdk14 "1.7.25"]                         ; defined also in SlipStream artifact
    [org.slf4j/slf4j-log4j12 "1.7.25"]                       ; defined also in SlipStream artifact
+
+   ;; version 2.12.0 must be specified when using zookeeper
+   ;; v3.4.x.  Upgrades beyond that may allow/require a
+   ;; new version of curator-test. See:
+   ;; https://curator.apache.org/zk-compatibility.html
    [org.apache.curator/curator-test "2.12.0" :scope "test"]
 
    [potemkin "0.4.5" :exclusions [riddley]]                 ; aleph needs a more recent version
@@ -158,6 +163,8 @@
    [superstring "3.0.0"]
 
    [zookeeper-clj "0.9.4"]
+
+   ;; when upgrading beyond 3.4.x, update curator version above
    [org.apache.zookeeper/zookeeper "3.4.13"
     :exclusions [jline
                  org.slf4j/slf4j-log4j12]]
@@ -175,7 +182,7 @@
    [day8.re-frame/re-frame-10x "0.3.3" :scope "test"]
 
    ;; cljs testing; control options here
-   [doo "0.1.10" :scope "test"]
+   [doo "0.1.11" :scope "test"]
 
    [expectations "2.1.9" :scope "test"]                     ; defined also in SlipStream artifact
 
@@ -186,7 +193,7 @@
 
    [peridot "0.5.1" :scope "test"]
 
-   [thheller/shadow-cljs "2.7.2"]
+   [thheller/shadow-cljs "2.7.5"]
    ]
 
   :repositories
