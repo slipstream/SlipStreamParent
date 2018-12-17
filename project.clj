@@ -40,7 +40,7 @@
    ;; core languages
    ;;
 
-   [org.clojure/clojure "1.9.0"]                            ; defined also in SlipStream artifact
+   [org.clojure/clojure "1.10.0"]                           ; defined also in SlipStream artifact
    [org.clojure/clojurescript "1.10.439"]
 
    ;;
@@ -69,12 +69,12 @@
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.455"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.470"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
-   [com.draines/postal "2.0.2"]
-   [com.jcraft/jsch "0.1.54"]                               ; defined also in SlipStream artifact
+   [com.draines/postal "2.0.3"]
+   [com.jcraft/jsch "0.1.55"]                               ; defined also in SlipStream artifact
    [com.rpl/specter "1.1.2"]
    [com.taoensso/encore "2.96.0"]
    [com.taoensso/tempura "1.2.1"]
@@ -179,8 +179,6 @@
 
    [com.google.javascript/closure-compiler-unshaded "v20181028"]
 
-   [day8.re-frame/re-frame-10x "0.3.3" :scope "test"]
-
    ;; cljs testing; control options here
    [doo "0.1.11" :scope "test"]
 
@@ -193,7 +191,7 @@
 
    [peridot "0.5.1" :scope "test"]
 
-   [thheller/shadow-cljs "2.7.5"]
+   [thheller/shadow-cljs "2.7.9"]
    ]
 
   :repositories
