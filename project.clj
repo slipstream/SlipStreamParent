@@ -191,7 +191,7 @@
 
    [peridot "0.5.1" :scope "test"]
 
-   [thheller/shadow-cljs "2.7.9"]
+   [thheller/shadow-cljs "2.7.2"]
    ]
 
   :repositories
