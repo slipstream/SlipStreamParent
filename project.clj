@@ -16,6 +16,7 @@
             [lein-ancient "0.6.15"]
             [lein-environ "1.1.0"]
             [lein-kibit "0.1.6"]
+            [lein-licenses "0.2.2"]
             [lein-nsorg "0.1.4"]
             [lein-shell "0.5.0"]
             [com.livingsocial/lein-dependency-check "1.0.2"]]
@@ -69,7 +70,7 @@
    [commons-lang/commons-lang "2.6"]                        ; defined also in SlipStream artifact
    [commons-codec/commons-codec "1.11"]                     ; defined also in SlipStream artifact
    [compojure "1.6.1"]
-   [com.amazonaws/aws-java-sdk-s3 "1.11.470"]
+   [com.amazonaws/aws-java-sdk-s3 "1.11.483"]
    [com.andrewmcveigh/cljs-time "0.5.2"]
    [com.cemerick/url "0.1.1"
     :exclusions [com.cemerick/clojurescript.test]]
@@ -90,11 +91,11 @@
 
    [enlive "1.1.6"]
    [environ "1.1.0"]
-   [expound "0.7.1"]
+   [expound "0.7.2"]
 
    [funcool/promesa "1.9.0"]
 
-   [instaparse "1.4.9"]
+   [instaparse "1.4.10"]
    [io.nervous/kvlt "0.1.5-20180119.082733-5"
     :exclusions [org.clojure/clojurescript]]
 
@@ -177,12 +178,12 @@
    [clojure-complete "0.2.5" :scope "test"
     :exclusions [org.clojure/clojure]]
 
-   [com.google.javascript/closure-compiler-unshaded "v20181028"]
+   [com.google.javascript/closure-compiler-unshaded "v20181125"]
 
    ;; cljs testing; control options here
    [doo "0.1.11" :scope "test"]
 
-   [expectations "2.1.9" :scope "test"]                     ; defined also in SlipStream artifact
+   [expectations "2.1.10" :scope "test"]                    ; defined also in SlipStream artifact
 
    [junit "4.12" :scope "test"]
 
@@ -191,7 +192,7 @@
 
    [peridot "0.5.1" :scope "test"]
 
-   [thheller/shadow-cljs "2.7.2"]
+   [thheller/shadow-cljs "2.7.15"]
    ]
 
   :repositories
